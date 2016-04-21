@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Flickr Application</string>
+    <string name="action_settings">Select Quantity of Data</string>
+    <string name="text_input_hint">Search</string>
+    <string name="text_search_on_flickr">Search Anything on Flickr...</string>
+
+    <string name="str_loading_data">Loading Data...</string>
+    <string name="str_please_wait">Please Wait</string>
+    <string name="str_ok">Ok</string>
+    <string name="str_search_something">Please enter something to search!</string>
+    <string name="str_no_data_found">Sorry, no data has been found!</string>
+
+    <string name="str_select_data_quantity">Please select quantitiy of data to fetch!</string>
+
+    <string name="str_item_name_extra">item_name_extra</string>
+    <string name="str_item_image_url_extra">item_image_url_extra</string>
+</resources>
