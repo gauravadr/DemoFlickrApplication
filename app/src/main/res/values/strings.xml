@@ -7,6 +7,7 @@
     <string name="str_loading_data">Loading Data...</string>
     <string name="str_please_wait">Please Wait</string>
     <string name="str_ok">Ok</string>
+    <string name="str_no_connection">Check your network connection!</string>
     <string name="str_search_something">Please enter something to search!</string>
     <string name="str_no_data_found">Sorry, no data has been found!</string>
 

@@ -31,6 +31,7 @@ import java.util.Arrays;
 import app.flickr.com.flickrapplication.adapter.RecycleViewAdapter;
 import app.flickr.com.flickrapplication.model.ImageContainer;
 import app.flickr.com.flickrapplication.requests.FlickrImageRequests;
+import app.flickr.com.flickrapplication.utils.FlickrUtilities;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -136,6 +137,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void fetchData() {
         hideKeypad(this, searchEditText);
+        if(!FlickrUtilities.isConnected(this)){
+            showDialog(getString(R.string.str_no_connection));
+            return;
+        }
         if(searchEditText.getText().toString().trim().length()>0){
             requestQueue.cancelAll(this);
             progressDialog=ProgressDialog.show(MainActivity.this,getString(R.string.str_please_wait),getString(R.string.str_loading_data),
